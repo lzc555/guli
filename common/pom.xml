@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>common-util</module>
+        <module>service-base</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -32,10 +37,12 @@
         <!--swagger-->
         <dependency>
             <groupId>io.springfox</groupId>
+            <!--swagger2 核心依赖-->
             <artifactId>springfox-swagger2</artifactId>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
+            <!--swagger2 UI 依赖，可以更换其他的实现-->
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
 
